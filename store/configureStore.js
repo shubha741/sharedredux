@@ -1,10 +1,10 @@
 // store/configureStore.js
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import logger from 'redux-logger';
+import rootReducer from './reducers'; 
 import { thunk } from 'redux-thunk';
 import postReducer from '../reducers/postReducer';
 import commentReducer from '../reducers/commentReducer';
-import rootReducer from './reducers'; 
-import logger from 'redux-logger';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
   posts: postReducer,
