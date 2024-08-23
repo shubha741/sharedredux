@@ -1,6 +1,6 @@
 // store/configureStore.js
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import thunk from 'redux-thunk';
+import { thunk } from 'redux-thunk';
 import postReducer from '../reducers/postReducer';
 import commentReducer from '../reducers/commentReducer';
 
